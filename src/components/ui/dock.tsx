@@ -47,9 +47,9 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
 
     const renderChildren = () => {
       return React.Children.map(children, (child) => {
-        if (React.isValidElement(child) && child.type === DockIcon) {
-          return React.cloneElement(child, {
-            ...child.props,
+        if (React.isValidElement<DockIconProps>(child) && child.type === DockIcon) {
+          return React.cloneElement(child as React.ReactElement<DockIconProps>, {
+            ...child.props, // ✅ Now TypeScript knows child.props is an object
             mouseX: mouseX,
             size: iconSize,
             magnification: iconMagnification,
@@ -59,6 +59,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         return child;
       });
     };
+    
 
     return (
       <motion.div

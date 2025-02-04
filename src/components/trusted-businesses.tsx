@@ -1,20 +1,20 @@
 "use client";
 
 // import { CalendarIcon, MailIcon } from "lucide-react";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 // import { ModeToggle } from "@/components/mode-toggle";
-import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { Dock, DockIcon } from "@/components/ui/dock";
+// import { buttonVariants } from "@/components/ui/button";
+// import { Separator } from "@/components/ui/separator";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
+// import { cn } from "@/lib/utils";
+// import { Dock, DockIcon } from "@/components/ui/dock";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -102,153 +102,6 @@ export function DockDemo() {
       <span className="text-2xl">
         Trusted by 30+ Businesses
       </span>
-
-      <TooltipProvider>
-        <Dock direction="middle">
-          
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-20 rounded-full",
-                    )}
-                  >
-                    <Image src="/images/louisVuitton.png" alt="Louis Vuitton" width={500} height={500} />
-                    
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-
-            <Separator orientation="vertical" className="h-full" />
-
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                                        <Image src="/images/burberry.png" alt="Louis Vuitton" width={500} height={500} />
-
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-
-            <Separator orientation="vertical" className="h-full" />
-
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                    
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-
-            <Separator orientation="vertical" className="h-full" />
-
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                    
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-
-            <Separator orientation="vertical" className="h-full" />
-
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                    
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-
-            <Separator orientation="vertical" className="h-full" />
-            
-
-            <DockIcon>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href="#"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                    
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>home</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-            
-            
-          {/* <Separator orientation="vertical" className="h-full" /> */}
-          
-          {/* <Separator orientation="vertical" className="h-full py-2" /> */}
-          {/* <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <ModeToggle className="rounded-full" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Theme</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon> */}
-        </Dock>
-      </TooltipProvider>
     </div>
   );
 }
