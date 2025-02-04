@@ -11,7 +11,7 @@ function GetInTouch() {
           Ready to get started?
         </h2>
         <h1 className="text-2xl sm:text-3xl mb-8 text-gray-600 dark:text-gray-300">
-          Let's craft your next digital story
+          Let&apos;s craft your next digital story
         </h1>
         <div className="flex justify-center">
           <PulsatingButton>Get In Touch</PulsatingButton>

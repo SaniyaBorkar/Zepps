@@ -104,7 +104,7 @@ export default function LoginPage() {
           </Button>
           
           <div className="text-center">
-            <h2 className="text-gray-700 dark:text-gray-400">Don't have an account?</h2>
+            <h2 className="text-gray-700 dark:text-gray-400">Don&apos;t have an account?</h2>
             <Button asChild>
               <Link href="/register" className="text-[#5f43b2] hover:text-[#5f43b2]/80">Sign Up</Link>
             </Button>

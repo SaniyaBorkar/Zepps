@@ -194,7 +194,7 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Simple, transparent pricing</h2>
-          <p className="text-gray-600 dark:text-gray-400">Choose the plan that's right for you</p>
+          <p className="text-gray-600 dark:text-gray-400">Choose the plan that&apos;s right for you</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

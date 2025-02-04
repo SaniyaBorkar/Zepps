@@ -1,7 +1,7 @@
 'use client'
-import Link from 'next/link'
+// import Link from 'next/link'
 import LandingPage from './landingPage/page';
-import { ModeToggle } from '@/components/ui/toggle';
+// import { ModeToggle } from '@/components/ui/toggle';
 
 
 export default function Home() {

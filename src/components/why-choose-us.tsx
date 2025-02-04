@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import {
@@ -10,7 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import { AnimatedTooltipPreview } from "./ui/Faces-tooltip";
 
 export function WhyChooseUs() {
@@ -47,9 +47,9 @@ export function WhyChooseUs() {
     </div>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+// const Skeleton = () => (
+//   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+// );
 const items = [
   {
     title: "Tailored Solutions",
