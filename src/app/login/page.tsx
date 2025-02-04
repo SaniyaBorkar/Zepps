@@ -37,7 +37,7 @@ export default function LoginPage() {
       },
     })
   
-  async function onSubmit(values: { email: string; username: string; password: string }) {
+  async function onSubmit(values: { email: string; password: string }) {
     console.log(values) // Debugging
 
     const { data, error } = await supabase.auth.signInWithPassword({

@@ -1,6 +1,8 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
+import { Raleway } from "next/font/google";
+
 // import  "bootstrap/dist/css/bootstrap.min.css"
 
 // import { Gruppo } from "@next/font/google";
