@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 // import  "bootstrap/dist/css/bootstrap.min.css"
 
-import { Gruppo } from "@next/font/google";
-import { Cormorant } from "@next/font/google";
-import { Raleway } from "@next/font/google";
+// import { Gruppo } from "@next/font/google";
+// import { Cormorant } from "@next/font/google";
+// import { Raleway } from "@next/font/google";
 
 // const cormorant = Cormorant({
 //   subsets: ["latin"], // Ensure the Latin subset is included
