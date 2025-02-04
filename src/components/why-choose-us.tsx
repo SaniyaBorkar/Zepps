@@ -16,9 +16,9 @@ import { AnimatedTooltipPreview } from "./ui/Faces-tooltip";
 export function WhyChooseUs() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-40 ">
-      <div className="max-w-5xl mb-20">
+      <div className="max-w-5xl mb-20 px-6 sm:px-6">
         <h2 className="text-3xl">WHY CHOOSE US</h2>
-        <h2 className="text-4xl">Bring Your Vision to Life</h2>
+        <h2 className="text-4xl font-semibold pt-5"> Bring Your Vision to Life</h2>
         <p className="mt-10">
           At Zeps, we create websites that not only look great but perform
           flawlessly. Whether you’re a startup or an established business, we

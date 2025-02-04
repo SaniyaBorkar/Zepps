@@ -4,6 +4,8 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
+import { useRouter } from 'next/navigation'
+
 
 import { Button } from "@/components/ui/button"
 import {
@@ -17,6 +19,7 @@ import {
 import { Input } from "@/components/ui/input"
 import supabase from "@/lib/supabase"
 import Link from "next/link"
+// import { Router } from "next/router"
 
 // ✅ Define schema with email and password
 const formSchema = z.object({
@@ -32,6 +35,8 @@ const RegisterPage = () => {
       password: "",
     },
   })
+    const router = useRouter()
+  
 
   async function onSubmit(values: { email: string; password: string }) {
     console.log(values) // Debugging
@@ -46,7 +51,8 @@ const RegisterPage = () => {
     }
 
     if (data) {
-      console.log("user created")
+      console.log("user created");
+      router.push('/');
     }
   }
 

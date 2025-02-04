@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
 // import { CalendarIcon, MailIcon } from "lucide-react";
 // import Link from "next/link";
-import React from "react";
+// import React from "react";
 // import Image from "next/image";
 // import { ModeToggle } from "@/components/mode-toggle";
 // import { buttonVariants } from "@/components/ui/button";
@@ -16,7 +16,7 @@ import React from "react";
 // import { cn } from "@/lib/utils";
 // import { Dock, DockIcon } from "@/components/ui/dock";
 
-export type IconProps = React.HTMLAttributes<SVGElement>;
+// export type IconProps = React.HTMLAttributes<SVGElement>;
 
 // const Icons = {
 //   calendar: (props: IconProps) => <CalendarIcon {...props} />,
@@ -93,13 +93,40 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 //   },
 // };
 
+// export function DockDemo() {
+//   return (
+//     <div className="relative flex h-100vh w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background ">
+//       <div className="text-5xl max-w-5xl mb-20 mt-40 text-center">
+//       Innovation is at our core. We leverage the latest technologies to craft websites that <span className="text-[#5f43b2] drop-shadow-[0_0_30px_#5f43b2] font-semibold ">redefine digital experiences.</span>
+//       </div>
+//       <span className="text-2xl">
+//         Trusted by 30+ Businesses
+//       </span>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+'use client';
+
+import React from "react";
+
+export type IconProps = React.HTMLAttributes<SVGElement>;
+
 export function DockDemo() {
   return (
-    <div className="relative flex h-100vh w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background ">
-      <div className="text-5xl max-w-5xl mb-20 mt-40 text-center">
-      Innovation is at our core. We leverage the latest technologies to craft websites that <span className="text-[#5f43b2] drop-shadow-[0_0_30px_#5f43b2] font-semibold ">redefine digital experiences.</span>
+    <div className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background px-4 sm:px-6 lg:px-8">
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-5xl mb-10 sm:mb-20 mt-20 sm:mt-40 text-center leading-tight">
+        Innovation is at our core. We leverage the latest technologies to craft websites that{' '}
+        <span className="text-[#5f43b2] drop-shadow-[0_0_30px_#5f43b2] font-semibold">
+          redefine digital experiences.
+        </span>
       </div>
-      <span className="text-2xl">
+      <span className="text-lg sm:text-xl md:text-2xl text-center">
         Trusted by 30+ Businesses
       </span>
     </div>
