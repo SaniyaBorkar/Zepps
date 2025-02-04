@@ -370,7 +370,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ",
         className
       )}
     >
@@ -408,6 +408,27 @@ export const HoverEffect = ({
   );
 };
 
+// export const Card = ({
+//   className,
+//   children,
+// }: {
+//   className?: string;
+//   children: React.ReactNode;
+// }) => {
+//   return (
+//     <div
+//       className={cn(
+//         "rounded-2xl h-full w-full p-4 overflow-hidden bg-white/80 dark:bg-black/80 border border-[#5f43b2]/10 dark:border-[#5f43b2]/20 group-hover:border-[#5f43b2]/30 dark:group-hover:border-[#5f43b2]/40 relative z-20 backdrop-blur-sm",
+//         className
+//       )}
+//     >
+//       <div className="relative z-50">
+//         <div className="p-4">{children}</div>
+//       </div>
+//     </div>
+//   );
+// };
+
 export const Card = ({
   className,
   children,
@@ -418,8 +439,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white/80 dark:bg-black/80 border border-[#5f43b2]/10 dark:border-[#5f43b2]/20 group-hover:border-[#5f43b2]/30 dark:group-hover:border-[#5f43b2]/40 relative z-20 backdrop-blur-sm",
-        className
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white/80 dark:bg-black/80 border border-[#5f43b2]/10 dark:border-[#5f43b2]/20 group-hover:border-[#5f43b2]/30 dark:group-hover:border-[#5f43b2]/40 relative z-20 backdrop-blur-sm  shadow-[0_4px_15px_rgba(95,67,178,0.5)] transition-transform duration-300 group-hover:scale-105", className
       )}
     >
       <div className="relative z-50">
@@ -428,6 +448,7 @@ export const Card = ({
     </div>
   );
 };
+
 
 export const CardTitle = ({
   className,

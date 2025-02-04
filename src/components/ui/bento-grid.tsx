@@ -98,7 +98,6 @@ export const BentoGridItem = ({
   title,
   description,
   header,
-  icon,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -111,7 +110,7 @@ export const BentoGridItem = ({
       className={cn(
         "row-span-1 rounded-xl group/bento transition duration-200 p-4 flex flex-col",
         "border border-transparent shadow-input dark:shadow-none bg-white dark:bg-black dark:border-white/[0.2]",
-        "hover:shadow-[0_4px_20px_#5f43b2] dark:hover:shadow-[0_4px_20px_#5f43b2] overflow-hidden", // Add dark mode hover shadow
+        "hover:shadow-[0_4px_20px_#5f43b2] dark:hover:shadow-[0_4px_20px_#5f43b2] overflow-hidden", "w-[90%] mx-auto md:w-full",// Add dark mode hover shadow
         className
       )}
     >
@@ -130,11 +129,11 @@ export const BentoGridItem = ({
 
       {/* Content Section */}
       <div className="p-4 flex flex-col">
-        {icon}
+        
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-sans font-normal text-neutral-600 text-sm dark:text-neutral-300">
           {description}
         </div>
       </div>

@@ -3,11 +3,11 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 function Services() {
   return (
-    <div className='py-40'>
-      <div className="max-w-5xl mx-auto px-8 grid grid-cols-1 gap-16">
+    <div>
+      <div className="max-w-5xl mx-auto px-8 grid grid-cols-1 gap-12 mb-20">
         <div>
-          <h4 className='md:text-3xl text-primary/80 font-medium'>SERVICES</h4>
-          <h1 className="md:text-5xl font-bold mt-2 gradient-text text-[#5f43b2]">Exceeding Expectations</h1>
+          <h4 className='font-semibold md:text-3xl text-primary/80 font-medium'>SERVICES</h4>
+          <h1 className="text-2xl md:text-5xl font-bold mt-2 gradient-text text-[#5f43b2]">Exceeding Expectations</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
             Our expert team blends innovation and technology to build fast, secure, and scalable digital experiences.
           </p>

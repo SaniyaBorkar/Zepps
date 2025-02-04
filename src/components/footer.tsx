@@ -98,7 +98,7 @@
 
 'use client';
 
-import { Mail, MessageCircle, Twitter } from 'lucide-react';
+import { Mail, MessageCircle, Twitter, Rocket } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from './ui/button';
 
@@ -109,8 +109,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Main Content */}
           <div className="col-span-1 md:col-span-1 space-y-4">
-            <h2 className="text-2xl font-bold text-[#5f43b2] dark:text-white mb-4">Logo</h2>
-            <p className="text-sm">
+<div className="flex items-center">
+            <Rocket className="h-8 w-8 text-[#5f43b2] dark:[#5f43b2]" />
+            <span className="ml-2 text-xl font-bold text-gray-800 dark:text-white">
+              ZEPPS
+            </span>
+          </div>            <p className="text-sm">
               Want to make sure we fit in the right fit? Book a discovery call!
             </p>
             <div className="space-y-3">
@@ -166,7 +170,7 @@ export function Footer() {
                 className="flex items-center space-x-2 hover:text-[#5f43b2] transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                <span>contact@example.com</span>
+                <span>zepps@gmail.com</span>
               </a>
               <div className="flex space-x-4 pt-4">
                 <Button variant="ghost" size="icon" className="hover:text-[#5f43b2]">
@@ -181,11 +185,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-300 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm">Made by Example Studio</p>
-          <Button variant="ghost" size="sm" className="rounded-full hover:text-[#5f43b2]">
+        <div className="mt-12 pt-8 border-t border-gray-300 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center md:space-y-0">
+          <p className="text-sm">Made by Zepps</p>
+          <Link href="/"><Button variant="ghost" size="sm" className="rounded-full hover:text-[#5f43b2]">
             Back to top
-          </Button>
+          </Button></Link>
         </div>
       </div>
     </footer>

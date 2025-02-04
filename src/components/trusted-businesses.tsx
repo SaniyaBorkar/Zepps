@@ -119,8 +119,8 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockDemo() {
   return (
-    <div className="relative flex h-[100vh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background px-4 sm:px-6 lg:px-8">
-      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-5xl mb-10 sm:mb-20 mt-20 sm:mt-40 text-center leading-tight">
+    <div className="relative flex h-[80vh] w-5xl flex-col items-center justify-center overflow-hidden rounded-lg bg-background px-6 sm:px-8 lg:px-8">
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-5xl mb-10 sm:mb-20 sm:text-center leading-tight">
         Innovation is at our core. We leverage the latest technologies to craft websites that{' '}
         <span className="text-[#5f43b2] drop-shadow-[0_0_30px_#5f43b2] font-semibold">
           redefine digital experiences.
