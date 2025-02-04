@@ -108,7 +108,7 @@ export const Header = () => {
         WE BUILD <br /> WEBSITES THAT <br />
         <span className="text-[#5f43b2]">CONVERT</span>
       </h1>
-      <p className="max-w-2xl mx-auto text-xs sm:text-sm md:text-xl mt-3 sm:mt-4 md:mt-8 dark:text-neutral-200 font-cormorant">
+      <p className="max-w-2xl mx-auto text-md sm:text-2xl md:text-xl mt-3 sm:mt-4 md:mt-8 dark:text-neutral-200 font-cormorant">
         Custom-built websites tailored to your business needs. We specialize in
         modern, scalable, and high-performing web solutions.
       </p>
